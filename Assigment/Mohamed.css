@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: arial
+}
+body{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5dc
+}
+/*Header*/
+header{
+  padding-top: 0;
+  height: 49px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.Menu{
+  font-family: arial, cursive;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 10px;
+  display: inline-block;
+}
+.Menu li{
+  display: table-cell;
+  width: 250px;
+  font-size: 18px;
+  transition: text-shadow, color 1s;
+}
+.Menu a{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.inactive a:hover{
+  cursor: no-drop;
+  width: 250px;
+  height: auto;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.active{
+  background-color: #f5f5dc;
+  height: 40px;
+}
+/**/
+h1{
+  font-family: arial;
+  margin-left: 7%;
+  margin-top: 50px;
+}
+h2{
+  padding-left: 2%;
+  font-size: 32px;
+}
+span:nth-of-type(1){
+  float: left;
+}
+.personal{
+  margin-left: 7%;
+  margin-top: 40px;
+  background: RGBA(255,101,0,0.4);
+}
+.personal img{
+  width: 360px;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.personal td{
+  padding-left: 20px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.one{
+  font-size: 15px;
+}
+/**/
+span:nth-of-type(2){
+  float: left;
+}
+.aboutme{
+  width: 730px;
+  height: auto;
+  margin-left: 0.5%;
+  margin-top: 40px;
+  background: RGBA(255,101,0,0.4);
+}
+.aboutme td{
+  padding-left: 5%;
+  width: 150px;
+  padding-top: 7px;
+  padding-bottom: 2px;
+}
+.one{
+  font-size: 15px;
+}
+.left{
+  float: left;
+}
+.right{
+  float: left;
+}
+.paragraph h2{
+  margin-top: 25%;
+  padding-bottom: 15px;
+  font-size: 28px;
+}
+.paragraph .title{
+  padding-left: 2%;
+  font-size: 28px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.paragraph p{
+  padding-left: 3%;
+}
+/**/
+nav{
+  float: left;
+  display: inline-block;
+  position: fixed;
+  width: auto;
+  height: auto;
+  margin-left: 0.5%;
+  margin-top: 40px;
+}
+nav img{
+  width: 32px;
+  height: auto;
+}
+nav li{
+  display: block;
+  height: 75px
+}
+nav img:hover{
+  width: 50px
+}
