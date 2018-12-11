@@ -58,6 +58,7 @@ h2{
   font-size: 32px;
 }
 span:nth-of-type(1){
+  max-width: 100%;
   float: left;
 }
 .personal{
@@ -82,6 +83,8 @@ span:nth-of-type(1){
 }
 /**/
 span:nth-of-type(2){
+  max-width: 100%;
+  padding-right: -4%;
   float: left;
 }
 .aboutme{
@@ -146,7 +149,7 @@ footer{
   margin-top: 5%;
   text-align: center;
   padding-top: 10px;
-  height: 200px;
+  height: auto;
   width: 100%;
   background-color: grey;
 }
@@ -155,4 +158,24 @@ footer p{
   text-align: center;
   font-size: 32px;
   font-family: arial;
+}
+footer .footer-box{
+    width: 33.3333%;
+    margin: auto;
+}
+footer .footer-box p{
+    color: #fff;
+    font-size: 18px;
+}
+footer .footer-box .fa{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.5em 0.6em;
+    margin: 5px;
+    font-size: 20px;
+}
+footer img{
+    width: 32px;
+    height: auto;
 }
