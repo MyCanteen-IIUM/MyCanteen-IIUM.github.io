@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  max-width: 100%;
 }
 body{
   background-image: url(back.png);
@@ -12,12 +13,13 @@ body{
   height: 45px;
   border-radius: 4px 4px 4px 4px;
   background-color: #342b2b;
-  text-align: left;
-  margin-left: 10%;
+  text-align: center;
+  /* margin-left: 10%;
   margin-right: 180px;
-  margin-top: 1.7%;
+  margin-top: 1.7%; */
   padding: 25px;
   box-shadow: 4px 4px 4px 4px grey;
+  margin-bottom: 5%;
 }
 .Menu{
   font-family: arial, cursive;
@@ -61,8 +63,6 @@ body{
   border-bottom: 4px solid red;
 }
 .offer1{
-
-
   margin-left: 10%;
   margin-right: 180px;
   margin-top: 1.7%;
