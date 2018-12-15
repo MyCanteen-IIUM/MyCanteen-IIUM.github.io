@@ -11,10 +11,10 @@ body{
   height: 45px;
   border-radius: 4px 4px 4px 4px;
   background-color: #342b2b;
-  text-align: left;
-  margin-left: 10%;
+  text-align: center;
+  /* margin-left: 10%;
   margin-right: 180px;
-  margin-top: 1.7%;
+  margin-top: 1.7%; */
   padding: 25px;
   box-shadow: 4px 4px 4px 4px grey;
 }
@@ -48,7 +48,7 @@ body{
   color: white;
 }
 .left span{
-  float: right;
+  float: left;
 }
 .left span{
   float: left;
@@ -60,7 +60,9 @@ body{
   border-bottom: 4px solid red;
 }
 .pic{
-  margin: 10%;
+  width: 90%;
+  max-width: 100%;
+  padding-left: 10%;
   margin-top: 3%;
 }
 .pic a{
@@ -68,21 +70,36 @@ body{
   text-decoration: none;
 }
 .pic1 img{
+  max-width: 100%;
+  max-height: none;
+  width: 300px;
+  height: auto;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin-left: 0%;
+  margin-right: auto;
   border: 2px solid brown;
 }
 .pic2 img{
+  max-width: 100%;
+  max-height: none;
+  width: 300px;
+  height: auto;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  margin-left: 8.5%;
+  margin-left: 7.5%;
+  margin-right: auto;
   border: 2px solid brown
 }
 .pic3 img{
+  max-width: 100%;
+  max-height: none;
+  width: 300px;
+  height: auto;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  margin-left: 8.5%;
+  margin-left: 7.5%;
+  margin-right: auto;
   border: 2px solid brown
 }
 .pic a:hover{
