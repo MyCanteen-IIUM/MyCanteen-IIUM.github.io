@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="contactus.css">
+  </head>
+  <body>
+    <header class="One">
+      <div class="Menu">
+        <ul>
+          <li>
+            <a href="Home.html">
+              <img src="iium.png" alt="" width="25" height="auto">
+              <strong>MyCanteen</strong>
+            </a>
+          </li>
+          <li>
+            <a href="Menu.html">
+              <img src="logo.png" alt="" width="25" height="auto">
+              <strong>Menu</strong>
+            </a>
+          </li>
+          <li>
+            <a href="offer.html">
+              <img src="logo2.png" alt="" width="25" height="auto">
+              <strong>Offer</strong>
+            </a>
+          </li>
+          <li class="active">
+            <a href="contact.html">
+              <img src="logo1.png" alt="" width="25" height="auto">
+              <strong>Contact us</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <h1>
+    <span>Be</span>
+    <span>...</span>
+    <span>With</span>
+    <span>...</span>
+    <span>My</span>
+    <span>Canteen</span>
+    <span>IIUM</span>
+    <span>!</span></h1>
+      <span class="personal">
+        <h2>Personal Detail</h2>
+        <h2>1st Person</h2>
+        <img src="Mypic2.jpg" alt="">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td class="one">Mohamed Abdallah</td>
+          </tr>
+          <tr>
+            <td><strong>Age</strong></td>
+            <td class="one">19 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td class="one">Kuala Lumpur</td>
+          </tr>
+          <td><strong>E-MAIL</strong></td>
+          <td class="one">mohamedabdallah592@gmail.com</td>
+          <tr>
+            <td><strong>PHONE</strong></td>
+            <td class="one">+60-1131293718</td>
+          </tr>
+          <tr>
+            <td><strong>Experience</strong></td>
+            <td class="one">2 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Degree</strong></td>
+            <td class="one">Undergraduate</td>
+          </tr>
+        </table> <br><br>
+        <h2>2nd Person</h2>
+        <img src="Mypic2.jpg" alt="">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td class="one">Mohamed Abdallah</td>
+          </tr>
+          <tr>
+            <td><strong>Age</strong></td>
+            <td class="one">19 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td class="one">Kuala Lumpur</td>
+          </tr>
+          <td><strong>E-MAIL</strong></td>
+          <td class="one">mohamedabdallah592@gmail.com</td>
+          <tr>
+            <td><strong>PHONE</strong></td>
+            <td class="one">+60-1131293718</td>
+          </tr>
+          <tr>
+            <td><strong>Experience</strong></td>
+            <td class="one">2 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Degree</strong></td>
+            <td class="one">Undergraduate</td>
+          </tr>
+        </table> <br><br>
+        <h2>3rd Person</h2>
+        <img src="Mypic2.jpg" alt="">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td class="one">Mohamed Abdallah</td>
+          </tr>
+          <tr>
+            <td><strong>Age</strong></td>
+            <td class="one">19 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Location</strong></td>
+            <td class="one">Kuala Lumpur</td>
+          </tr>
+          <td><strong>E-MAIL</strong></td>
+          <td class="one">mohamedabdallah592@gmail.com</td>
+          <tr>
+            <td><strong>PHONE</strong></td>
+            <td class="one">+60-1131293718</td>
+          </tr>
+          <tr>
+            <td><strong>Experience</strong></td>
+            <td class="one">2 Years</td>
+          </tr>
+          <tr>
+            <td><strong>Degree</strong></td>
+            <td class="one">Undergraduate</td>
+          </tr>
+        </table>
+      </span>
+      <span class="aboutme">
+        <h2>OUR FOOD</h2>
+        <video muted autoplay loop playsinline>
+         <source src="video.mp4">
+        </video> <br><br><br><br>
+        <h2>FIND YOUR LOCATION</h2>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://d3js.org/topojson.v0.min.js"></script>
+    	<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+    	 <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+
+    <div id="mapid"></div>
+    <script type="text/javascript">
+    navigator.geolocation.getCurrentPosition(function(location) {
+    var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+
+    var mymap = L.map('mapid').setView(latlng, 13)
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoiYmJyb29rMTU0IiwiYSI6ImNpcXN3dnJrdDAwMGNmd250bjhvZXpnbWsifQ.Nf9Zkfchos577IanoKMoYQ'
+    }).addTo(mymap);
+
+    var marker = L.marker(latlng).addTo(mymap);
+    });
+    </script>
+      </span>
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <img src="facebook.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="gmail.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="instagram.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="twitter.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <footer>
+        <div class="resolution">
+          <p><h3><img src="men.png" width="32px" height="auto" alt="">Mahallah</h3></p><br>
+          <p><a href="Ali.html">Ali</a></p>
+          <p><a href="Bilal.html">Bilal</a></p>
+          <p><a href="Faruk.html">Faruk</a></p>
+          <p><a href="Ruqayyah.html">Ruqayyah</a></p>
+          <p><a href="Salahuddin.html">Salahuddin</a></p>
+          <p><a href="Siddiq.html">Siddiq</a></p>
+          <p><a href="Uthman.html">Uthman</a></p>
+          <p><a href="Zubair.html">Zubair</a></p>
+        </div>
+
+        <div class="resolution">
+          <p><h3><img src="women.png" width="32px" height="auto" alt=""> Mahallah</h3></p><br>
+          <p><a href="Ameenah.html">Ameenah</a></p>
+          <p><a href="Asma.html">Asma</a></p>
+          <p><a href="Assiah.html">Assiah</a></p>
+          <p><a href="Hafsa.html">Hafsa</a></p>
+          <p><a href="Ruqayyah.html">Ruqayyah</a></p>
+          <p><a href="Sumaiyah.html">Sumaiyah</a></p>
+        </div>
+
+        <div class="resolution">
+          <p><h3>Offers</h3></p><br>
+          No offer available yet
+        </div>
+
+        <div class="resolution">
+          <p><h3>Support</h3></p><br>
+          <p><a href="#">Contact us</a></p>
+          <p><a href="#">Feedback</a></p>
+          <p><a href="#">Report</a></p>
+          <p><a href="#">Help</a></p>
+        </div>
+
+        <div class="media">
+          <p><h3>Be always connect we us</h3></p>
+        </div>
+        </footer>
+  </body>
+</html>
