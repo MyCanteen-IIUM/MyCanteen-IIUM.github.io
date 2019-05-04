@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      html {
+  height: 100%;
+  font-size: 100%
+}
+
+body {
+  background-color: green;
+  font: 20px arial;
+  sans-serif;
+}
+
+/* ------- Nav Items ------- */
+
+ul {
+  list-style: none;
+  padding: 0px;
+  line-height: 0px;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 7px;
+  vertical-align: middle;
+}
+
+nav, footer {
+  padding: 4px 20px;
+}
+
+/* ------- Top Nav ------- */
+
+nav img {
+  list-style: none;
+  color: #000;
+  opacity: 0.85;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.75;
+}
+
+nav ul li a:hover {
+  text-decoration-line: underline;
+  opacity: 0.65;
+}
+
+/* ------- Left Nav Items ------- */
+
+.l_nav {
+  float: left;
+  padding-top: 10px;
+}
+
+/* ------- Right Nav Items ------- */
+
+.r_nav {
+  float: right;
+  position: relative;
+  padding-top: 0px;
+  padding-right: 8px;
+}
+
+.apps {
+  width: 16px;
+  height: 16px;
+  margin-top: -2px;
+  padding-right: 9px;
+  opacity: 0.75;
+}
+
+.apps:hover {
+  opacity: 1;
+}
+
+/* ------- Sign In Button ------- */
+
+.sign_in {
+  border: 1px solid #4285f4;
+  outline: none;
+  background: #4285f4;
+  display: inline-block;
+  line-height: 28px;
+  padding: 0 12px;
+  border-radius: 2px;
+}
+
+.sign_in a {
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.sign_in a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.sign_in:hover {
+  opacity: 1;
+  box-shadow: 0 1.5px 0 0 #e4e4e4;
+}
+
+/* ------- Center Conte ------- */
+
+.cntr_pg {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.logo {
+	display: 100%;
+  height: 92px;
+  width: 272px;
+  display: block;
+  margin: auto;
+}
+
+.form {
+  display: block;
+  margin: auto;
+}
+
+.search_bar {
+  width: 585px;
+  margin: auto;
+  height: 39px;
+  border: .7px solid #E4E4E4;
+  background-color: #fff;
+  box-shadow:0px 1px 4px #E4E4E4;
+  margin-bottom: 20px;
+  outline: none;
+  text-indent: 20px;
+}
+
+.search_bar:hover, .search_bar:active {
+  padding-bottom: 2px;
+  padding-top: 1px;
+  margin-top: -1px;
+  width: 585px;
+  box-shadow:0px 3px 8px #E4E4E4;
+  outline: none;
+}
+
+.mic {
+  width: 14px;
+  height: 20px;
+  position: relative;
+  left: 555px;
+  top: 34px;
+}
+
+.submit_buttons {
+  display: inline-block;
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: default;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.submit_buttons {
+  position: relative;
+  left: 25%;
+  right: -50%;
+}
+
+.submit_buttons:hover {
+  border: .7px solid #d0d0d0;
+  color: #000;
+  box-shadow:0px 1px 4px #E4E4E4;
+}
+
+/* ------- Footer ------- */
+
+.l_ftr {
+  float: left;
+}
+
+.r_ftr {
+  float: right;
+}
+
+footer {
+  line-height: 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #666666;
+  background-color: #f2f2f2;
+  border-top: solid 1px #e4e4e4;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.75;
+}
+
+footer a:hover {
+  text-decoration-line: underline;
+}
+      .main-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	padding: 10px;
+	margin: 0;
+	justify-content: space-around;
+}
+
+.image {
+	width: 40%;
+	height: auto;
+	padding-top: 50px;
+	line-height: auto;
+}
+
+.container-fluid {
+	width: 100%;
+	height: auto;
+	padding-top: 400px;
+	line-height: auto;
+}
+
+h1 {
+	color: green;
+	font-size: 50px;
+	text-align: center;
+}
+
+p {
+	color: green;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.quotes {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	border-color: white;
+	border-radius: 5px;
+	height: auto;
+	color: green;
+}
+
+.quote {
+	font-size: 30px;
+}
+
+.author {
+	font-size: 20px;
+	font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+	.main-container {
+		width: 100% !important;
+		height: auto !important;
+	}
+	.image {
+		width: 100% !important;
+		height: auto !important;
+	}
+	.container-fluid {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	h1 {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	p {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.quotes {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.quote {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.author {
+		width: 100% !important;
+		height: auto !important;
+	}
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+    <ul class="r_nav">
+      <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwi8ppfxkffhAhUEq48KHWT6DbMQFjAAegQIBxAC&url=https%3A%2F%2Fwww.google.com%2Fgmail%2F&usg=AOvVaw3mZ_qbD_gQyp_sqkjrwStn">Gmail</a></li>
+      <li><a href="https://sysidriss.wixsite.com/newsilasm">Muslim News</a></li>
+      <li class="sign_in"><a href="Wix.html">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <section class="cntr_pg">
+    <img class="logo" src="Screenshot 2019-04-19 at 12.30.00 AM.png" alt="Global logo" />
+    <br>
+    <form action="#" method="#" name="searchquery">
+      <input type="text" font-size="20px" name="searchfield" class="search_bar"></input>
+      <div class="search_buttons">
+        <input class="submit_buttons" type="submit" value="Google Search" name="submit">
+        <input class="submit_buttons" type="submit" value="I'm Feeling Lucky" name="feelinglucky"></input>
+      </div>
+    </form>
+  </section>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="hadith.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="hadith.js"></script>
+
+<style type="text/css">
+
+</style>
+
+<div class="main-container">
+
+<!-- 	<div class="image"></div> -->
+
+	<div class="container-fluid text-center">
+		<h1 style="color: green">Random Hadith</h1> <!-- The color here was changed to green so that CodePen could render the color properly -->
+		<p style="padding: 0px 0px 0px 0px;">A random list of hadith of Prophet Muhammad (pbuh)</p>
+		<button class="btn btn-primary" type="submit" id="newQuote">New Hadith</button>
+		<a href="#" class="btn btn-success" id="tweet"><i class="fa fa-twitter-square"></i>&nbsp; Tweet</a>
+		<br/>
+		<br/>
+		<div class="quotes">
+			<span class="quote"></span>
+			<br/>
+			<span class="author"></span>
+		</div>
+	</div>
+
+</div>
+<script>
+  $(document).ready(function() {
+	var randomQuote, randomNumber, randomNumber, image;
+	getQuote();
+
+	$(".quotes").css('display', 'none');
+	$(".quote").css('display', 'none');
+	$(".author").css('display', 'none');
+
+	$(".quotes").fadeIn(2000);
+	$(".quote").fadeIn(2000);
+	$(".author").fadeIn(2000);
+
+	function getQuote() {
+
+		$(".quotes").show();
+		$(".quote").show();
+		$(".author").show();
+
+		$(".quotes").css('display', 'none');
+		$(".quote").css('display', 'none');
+		$(".author").css('display', 'none');
+		$(".image").css('opacity', '1');
+
+		$(".quotes").fadeIn(2000);
+		$(".quote").fadeIn(2000);
+		$(".author").fadeIn(2000);
+
+		var quotes = [
+			{
+				quote: "Spread the salaam amongst yourselves. (Muslims)",
+				author: "(Muslims)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah1.jpg",
+			},
+			{
+				quote: "Before speaking the salaam should be said.",
+				author: "(Tirmizi)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah2.jpg"
+			},
+			{
+				quote: "Those who are nearest to God are they who are first to give a salutation (Salaam).",
+				author: "(Tirmidhi)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah3.jpg"
+			},
+			{
+				quote: "Fasting is a shield (from sins).",
+				author: "(Tirmizi)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah4.jpg"
+			},
+			{
+				quote: "Cleanliness is a part of the Faith.",
+				author: "(Tirmizi)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah5.jpg"
+			},
+			{
+				quote: "Actions depend on their intention.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah6.jpg"
+			},
+			{
+				quote: "A Muslim is a brother of a Muslim.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah7.jpg"
+			},
+			{
+				quote: "The one who recites the Quran and the one who listens to it have an equal share in the reward.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah8.jpg"
+			},
+			{
+				quote: "The best of you is the one who learned and taught the Quran.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah9.jpg"
+			},
+			{
+				quote: "Feed the hungry, visit the sick and free the captive.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah10.jpg"
+			},
+			{
+				quote: "Salaat is a pillar of the Deen.",
+				author: "(Tabrani)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/allah11.jpg"
+			},
+			{
+				quote: "A man follows the religion of his close friend, so each of you should be very careful about whom he takes as a close friend.",
+				author: "(Abu Dawud)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah2.jpg"
+			},
+			{
+				quote: "When any of you eats, he should eat with his right hand and when he drinks he should drink with his right hand.",
+				author: "(Muslim)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah-rose.jpg"
+			},
+			{
+				quote: "Mention God's name, eat with your right hand and eat from what is next to you.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah.jpg"
+			},,
+			{
+				quote: "The Prophet (peace and blessings of Allah be upon him) forbade that a man should drink standing.",
+				author: "(Muslim)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/masjid1.jpg"
+			},
+			{
+				quote: "The strong man is not the good wrestler; the strong man is only the one who controls himself when he is angry.",
+				author: "(Bukhari)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/moon-masjid.jpg"
+			},
+			{
+				quote: "When one of you becomes angry while standing, he should sit down. If the anger leaves him, well and good; otherwise he should lie down.",
+				author: "(Ahmad)",
+				img_url: "http://freeislamicapps.com/images/wallpapers/muhammad-pbuh1.jpg"
+			},
+			{
+				quote: "God will not show mercy to him who does not show mercy to others.",
+				author: "(Bukhari)",
+				img_url: "http://img08.deviantart.net/9f86/i/2010/229/a/d/makkah_abstract_islamic_art_by_xtrememediaworx.jpg"
+			},
+			{
+				quote: "Sadqa given to a poor man is just Sadqa, but when given to a relative it serves a double purpose, being both Sadqa and a connecting link.",
+				author: "(Tirmidhi).",
+				img_url: "http://pre13.deviantart.net/bbe8/th/pre/f/2013/013/a/c/al_ikhlas_by_designstyle-d5real4.png"
+			},
+			{
+				quote: "If you spend (to help others), O son of Adam! I (God) shall spend on you.",
+				author: "(Bukhari)",
+				img_url: "http://pre14.deviantart.net/0322/th/pre/i/2011/267/2/3/hazrat_ali_r_a_calligraphy_by_sheikhrouf23-d4as3j3.jpg"
+			},
+			{
+				quote: "It is better for a man to give a dirham as Sadqa during his lifetime than to give a hundred at the time of his death.",
+				author: "(Abu Dawud)",
+				img_url: "http://orig11.deviantart.net/22d0/f/2010/281/1/f/1f43606ad364d5d369bd2a24c63e6cd6-d30d1uf.jpg"
+			}
+		]
+
+		// This function was grabbed from http://stackoverflow.com/questions/15585216/how-to-randomly-generate-numbers-without-repetition-in-javascript
+		// I was too lazy to figure out how to create a random number without repeating it
+		var random = [];
+		for (var i = 0; i < quotes.length; i++) {
+			var temp = Math.floor(Math.random()*quotes.length);
+
+			if (random.indexOf(temp) == -1) {
+				random.push(temp);
+			} else
+			i--;
+		}
+
+		randomNumber = random[0];
+		randomQuote = quotes[randomNumber].quote;
+		randomAuthor = quotes[randomNumber].author;
+		image = quotes[randomNumber].img_url;
+		font_color = quotes[randomNumber].color;
+
+		$(".quote").html(randomQuote);
+		$(".quote").css('font-weight', 'bold');
+
+		$(".author").html(randomAuthor);
+		$('body').css({
+			'background-image': 'url(' + "'" + image + "'" + ')',
+			'background-position': 'center',
+      'width': '100%',
+      'height': 'auto',
+			'background-size': 'cover',
+			'-webkit-background-size': 'cover',
+  			'-moz-background-size': 'cover',
+  			'-o-background-size': 'cover',
+			'background-repeat': 'no-repeat',
+			'transition-duration': '1s'
+		});
+	}
+
+	$("#newQuote").on("click", function() {
+		$(".image").css('opacity', '0');
+		$(".quotes").fadeOut(200, function() {
+			getQuote();
+		});
+	});
+
+	$("#tweet").on("click", function() {
+		window.open("https://twitter.com/intent/tweet?text=" + '"' + randomQuote + '"' + randomAuthor);
+	});
+});
+</script>
+<footer>
+    <ul class="l_ftr">
+      <li>Happy to Be Mulism</li>
+    </ul>
+
+    <ul class="r_ftr">
+      <li><a href="#">Language</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="https://youdiallo18.wixsite.com/mysite-4">Historic</a></li>
+    </ul>
+  </footer
+  </body>
+</html>
