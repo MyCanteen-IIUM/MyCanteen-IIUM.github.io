@@ -24,6 +24,7 @@ ul {
 }
 
 li {
+  font-size: 18px;
   display: inline-block;
   padding: 5px 7px;
   vertical-align: middle;
@@ -125,6 +126,7 @@ nav ul li a:hover {
   width: 272px;
   display: block;
   margin: auto;
+  margin-top: -20%;
 }
 
 .form {
@@ -202,6 +204,7 @@ nav ul li a:hover {
 }
 
 footer {
+  font-size: 16px;
   line-height: 0px;
   position: absolute;
   left: 0;
@@ -238,6 +241,7 @@ footer a:hover {
 }
 
 .container-fluid {
+  margin-top: -5%;
 	width: 100%;
 	height: auto;
 	padding-top: 400px;
@@ -253,7 +257,7 @@ h1 {
 p {
 	color: green;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .quotes {
@@ -268,6 +272,7 @@ p {
 
 .quote {
 	font-size: 30px;
+  color: black;
 }
 
 .author {
@@ -332,7 +337,7 @@ p {
       <input type="text" font-size="20px" name="searchfield" class="search_bar"></input>
       <div class="search_buttons">
         <input class="submit_buttons" type="submit" value="Google Search" name="submit">
-        <input class="submit_buttons" type="submit" value="I'm Feeling Lucky" name="feelinglucky"></input>
+        <input class="submit_buttons" type="submit" value="I'm Searching Here" name="feelinglucky"></input>
       </div>
     </form>
   </section>
@@ -351,8 +356,8 @@ p {
 <!-- 	<div class="image"></div> -->
 
 	<div class="container-fluid text-center">
-		<h1 style="color: green">Random Hadith</h1> <!-- The color here was changed to green so that CodePen could render the color properly -->
-		<p style="padding: 0px 0px 0px 0px;">A random list of hadith of Prophet Muhammad (pbuh)</p>
+		<h1 style="color: green">Hadith</h1> <!-- The color here was changed to green so that CodePen could render the color properly -->
+		<p style="padding: 0px 0px 0px 0px;">A list of hadith of our beloved Prophet Muhammad (pbuh)</p>
 		<button class="btn btn-primary" type="submit" id="newQuote">New Hadith</button>
 		<a href="#" class="btn btn-success" id="tweet"><i class="fa fa-twitter-square"></i>&nbsp; Tweet</a>
 		<br/>
@@ -397,107 +402,86 @@ p {
 			{
 				quote: "Spread the salaam amongst yourselves. (Muslims)",
 				author: "(Muslims)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah1.jpg",
 			},
 			{
 				quote: "Before speaking the salaam should be said.",
 				author: "(Tirmizi)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah2.jpg"
 			},
 			{
 				quote: "Those who are nearest to God are they who are first to give a salutation (Salaam).",
 				author: "(Tirmidhi)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah3.jpg"
 			},
 			{
 				quote: "Fasting is a shield (from sins).",
 				author: "(Tirmizi)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah4.jpg"
 			},
 			{
 				quote: "Cleanliness is a part of the Faith.",
 				author: "(Tirmizi)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah5.jpg"
 			},
 			{
 				quote: "Actions depend on their intention.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah6.jpg"
 			},
 			{
 				quote: "A Muslim is a brother of a Muslim.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah7.jpg"
 			},
 			{
 				quote: "The one who recites the Quran and the one who listens to it have an equal share in the reward.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah8.jpg"
 			},
 			{
 				quote: "The best of you is the one who learned and taught the Quran.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah9.jpg"
 			},
 			{
 				quote: "Feed the hungry, visit the sick and free the captive.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah10.jpg"
 			},
 			{
 				quote: "Salaat is a pillar of the Deen.",
 				author: "(Tabrani)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/allah11.jpg"
 			},
 			{
 				quote: "A man follows the religion of his close friend, so each of you should be very careful about whom he takes as a close friend.",
 				author: "(Abu Dawud)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah2.jpg"
 			},
 			{
 				quote: "When any of you eats, he should eat with his right hand and when he drinks he should drink with his right hand.",
 				author: "(Muslim)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah-rose.jpg"
 			},
 			{
 				quote: "Mention God's name, eat with your right hand and eat from what is next to you.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/bismillah.jpg"
 			},,
 			{
 				quote: "The Prophet (peace and blessings of Allah be upon him) forbade that a man should drink standing.",
 				author: "(Muslim)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/masjid1.jpg"
 			},
 			{
 				quote: "The strong man is not the good wrestler; the strong man is only the one who controls himself when he is angry.",
 				author: "(Bukhari)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/moon-masjid.jpg"
 			},
 			{
 				quote: "When one of you becomes angry while standing, he should sit down. If the anger leaves him, well and good; otherwise he should lie down.",
 				author: "(Ahmad)",
-				img_url: "http://freeislamicapps.com/images/wallpapers/muhammad-pbuh1.jpg"
 			},
 			{
 				quote: "God will not show mercy to him who does not show mercy to others.",
 				author: "(Bukhari)",
-				img_url: "http://img08.deviantart.net/9f86/i/2010/229/a/d/makkah_abstract_islamic_art_by_xtrememediaworx.jpg"
 			},
 			{
 				quote: "Sadqa given to a poor man is just Sadqa, but when given to a relative it serves a double purpose, being both Sadqa and a connecting link.",
 				author: "(Tirmidhi).",
-				img_url: "http://pre13.deviantart.net/bbe8/th/pre/f/2013/013/a/c/al_ikhlas_by_designstyle-d5real4.png"
 			},
 			{
 				quote: "If you spend (to help others), O son of Adam! I (God) shall spend on you.",
 				author: "(Bukhari)",
-				img_url: "http://pre14.deviantart.net/0322/th/pre/i/2011/267/2/3/hazrat_ali_r_a_calligraphy_by_sheikhrouf23-d4as3j3.jpg"
 			},
 			{
 				quote: "It is better for a man to give a dirham as Sadqa during his lifetime than to give a hundred at the time of his death.",
 				author: "(Abu Dawud)",
-				img_url: "http://orig11.deviantart.net/22d0/f/2010/281/1/f/1f43606ad364d5d369bd2a24c63e6cd6-d30d1uf.jpg"
 			}
 		]
 
